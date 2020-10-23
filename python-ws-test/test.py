@@ -8,16 +8,16 @@ def main():
     print("As linguagens que estão sendo procuradas são:", LINGUAGENS)
     print("Os contatos quais a mensagem será enviada são: ")
     #print(type(CONTATOS))
-    print(len(CONTATOS))
+    print("Quantidade de contatos", len(CONTATOS))
     
     for c in CONTATOS:
         print("Contato:", c)
     
     if len(CONTATOS) <= 1:
-        print('A lista não foi construída do jeito que devia')
+        print("\n\nA lista não foi construída do jeito que devia")
         exit(1)
     else:
-        print('A lista foi construída do jeito que deveria :D')
+        print("\n\nA lista foi construída do jeito que deveria :D")
         exit(0)
     return LINGUAGENS
 
