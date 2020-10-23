@@ -18,7 +18,7 @@ def envia_email(mensagem):
     msg['From'] = ENDERECO_EMAIL
     msg['To'] = ENDERECO_EMAIL
     msg.set_content('Este email foi enviado com variáveis de ambiente ocultas e fornecidas pelo próprio jenkins\n' +
-    'Se conseguirmos ver as linguagens que estão sendo informadas aqui abaixo.\n\n', str(mensagem))
+    'Se conseguirmos ver as linguagens que estão sendo informadas aqui abaixo.\n\n' + mensagem)
 
     with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
         smtp.login(ENDERECO_EMAIL, SENHA_EMAIL)
