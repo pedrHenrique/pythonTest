@@ -24,7 +24,7 @@ def envia_email(mensagem):
         smtp.login(ENDERECO_EMAIL, SENHA_EMAIL)
         smtp.send_message(msg)
 
-    print('Então o teste foi um sucesso :)\n\n Email enviado com sucesso')
+    print('\nEmail enviado com sucesso')
 
 if __name__ == '__main__':
     envia_email('mensagem genêrica de teste')
