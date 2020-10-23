@@ -6,8 +6,12 @@ def main():
 
     print("Olá Mundo")
     print("As linguagens que estão sendo procuradas são:", LINGUAGENS)
-    print("Os contatos quais a mensagem será enviada são: ", CONTATOS)
-    print(type(CONTATOS))
+    print("Os contatos quais a mensagem será enviada são: ")
+    #print(type(CONTATOS))
+    
+    for c in CONTATOS:
+        print("Contato:", c)
+    
 
     return LINGUAGENS
 
