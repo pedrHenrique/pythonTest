@@ -2,7 +2,7 @@ import os
 
 def main():
     LINGUAGENS = os.environ.get('LANG')
-    CONTATOS = [os.environ.get('CONTACTS')]#.split(',')
+    CONTATOS = os.environ.get('CONTACTS').split(',')
 
     print("Olá Mundo")
     print("As linguagens que estão sendo procuradas são:", LINGUAGENS)
